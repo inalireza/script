@@ -1,0 +1,15 @@
+import requests
+from colorama import Fore, init
+
+init()
+url = input("Enter Target URL : ")
+req = requests.get("https://api.hackertarget.com/nmap/?q=" + url).text
+
+if "Error enter single IP or Host only on Free Scan" in req:
+    print(Fore.RED, "Lotfan Ip Ya Adress Ra Vared Konid")
+else:
+    print(Fore.GREEN, "===============================================================")
+
+    print(Fore.LIGHTRED_EX, req)
+
+    print(Fore.GREEN, "===============================================================")
