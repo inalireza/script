@@ -1,9 +1,4 @@
-def addstudent():
-    print("Student Added.")
 
-
-
-'''
 ans=True
 
 while ans:
@@ -25,4 +20,4 @@ while ans:
       ans = None
     else:
        print("\n Not Valid Choice Try again")
-'''
+
